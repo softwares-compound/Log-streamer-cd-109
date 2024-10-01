@@ -23,6 +23,7 @@
 │   └── server.ts       # Express server
 ├── tsconfig.json       # TypeScript configuration
 └── .gitignore          # Git ignore rules
+```
 
 ## Prerequisites
 
