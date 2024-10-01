@@ -10,6 +10,20 @@
 - **Centralized logging**: Sends logs to a central server for aggregation and analysis.
 - **Customizable**: Easily configure the log paths, filters, and destination server.
 
+## Project Structure
+
+```plaintext
+.
+├── Dockerfile
+├── README.md
+├── dist                # Compiled TypeScript files (output directory)
+├── node_modules        # Dependencies
+├── package.json        # Project dependencies and scripts
+├── src                 # TypeScript source files
+│   └── server.ts       # Express server
+├── tsconfig.json       # TypeScript configuration
+└── .gitignore          # Git ignore rules
+
 ## Prerequisites
 
 - **Docker** must be installed on your server.
