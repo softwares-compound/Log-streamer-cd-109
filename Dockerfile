@@ -10,11 +10,14 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
-# Copy the rest of the application code
+# Copy the TypeScript source code
 COPY . .
 
-# Expose port 3000 (the port your app runs on)
+# Build the TypeScript code
+RUN npm run build
+
+# Expose port 3000
 EXPOSE 3000
 
-# Command to run the app
-CMD ["node", "server.js"]
+# Start the server using the compiled JavaScript files
+CMD ["npm", "start"]
