@@ -18,5 +18,5 @@ app.all('*', (req: Request, res: Response) => {
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Log Forwarder running at http://localhost:${port}`);
+  console.log(`Log Streamer service running at http://localhost:${port}`);
 });
