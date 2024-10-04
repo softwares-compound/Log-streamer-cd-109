@@ -2,8 +2,8 @@ import express, { Request, Response } from 'express';
 import net from 'net';
 
 const app = express();
-const port = 3000;
-const tcpPort = 5000;  // Port to receive logs from Logstash
+const port = 5000;
+const tcpPort = 3000;  // Port to receive logs from Logstash
 
 // Middleware to parse JSON request bodies
 app.use(express.json());
@@ -24,7 +24,6 @@ app.listen(port, () => {
 });
 
 
-// ==================================//
 // ==================================//
 // ==================================//
 
